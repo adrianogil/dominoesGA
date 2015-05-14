@@ -469,7 +469,7 @@ function evalPoints = applyRandomHeuristic(side1, side2, direction, ...
             (direction == 1 || direction == 3)
         evalPoints = -100;
     elseif size_a ~= 0 && dominoes.freeTips(direction) == side1
-        evalPoints = randint(1,1,[0,6]);
+        evalPoints = randi(1,1,[0,6]);
     else 
         evalPoints = -100;
     end
